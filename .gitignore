@@ -1,0 +1,4 @@
+node_modules
+.MNIST
+.templateVenv
+__pycache__
