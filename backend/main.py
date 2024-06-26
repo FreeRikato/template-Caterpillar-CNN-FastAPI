@@ -1,3 +1,5 @@
+# main.py
+
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import sys
@@ -41,3 +43,4 @@ async def predict(file: UploadFile = File(...)):
 @app.get("/")
 async def root():
     return {"message": "Welcome to the MNIST Digit Classifier API"}
+
